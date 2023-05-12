@@ -1,0 +1,136 @@
+
+:root {
+    --swiper-theme-color: transparent !important;
+  }
+
+.nav-m-bg{
+    background-image: url(@/assets/images/nav-m.png);
+    background-size:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-left: calc(-1 * $container-padding-x * 0.5);
+    margin-right: calc(-1 * $container-padding-x * 0.5);
+}
+
+.nav-m-height{
+    margin-bottom: calc(14vh);
+}
+.footer{
+    background-image: url(@/assets/images/waves-m.png);
+    background-repeat: repeat-x;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+.mt-128{
+    margin-top: 128px;
+}
+.hero{
+    padding-top: calc(49.0667vw);
+}
+.common-hero{
+    padding-top: 56px;
+}
+.hero-banner{
+    max-height: 300px !important;
+}
+.porductList{
+    height: 100%;
+}
+.porductList:hover{
+    transform: scale(1.01);
+    box-shadow: 0 5px 5px 1px #CF8516;
+}
+
+.productCard:hover{
+    border-radius: 80px 80px 16px 16px;
+    transform: scale(1.01);
+    box-shadow: 0 5px 5px 1px #CF8516;
+    img{
+        transform: scale(1.01);
+        box-shadow: 0 5px 5px 1px #CF8516;
+    }
+}
+.cardHover:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0.5rem 1rem #CF8516;
+}
+.productCard button {
+    line-height: 1.2;
+}
+.productsCatalogNav {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: sticky;
+    top:60px;
+    left: 0;
+    z-index: 2;
+    background-color: $primary;
+}
+.productsCatalogNav::-webkit-scrollbar{
+    display: none;
+}
+.productModalImg{
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    border-radius: 16%;
+}
+.card-img-top{
+    width: 87%;
+    border-radius: 16%;
+}
+.card-body{
+    padding-top: 105px;
+}
+
+@include media-breakpoint-up(lg){
+    .footer{
+        background-image: url(@/assets/images/waves.png);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pb-sm-382{
+        padding-bottom: 0px;
+        }
+        .nav-m-bg{        
+            background-image: none;
+        }
+        .hero{
+            padding-top: 355px;
+        }
+        .common-hero{
+            padding-top: 144px;
+        }
+        .productCard:hover{
+            border-radius: 120px 120px 20px 20px;
+            transform: scale(1.01);
+            box-shadow: 0 5px 5px 1px #CF8516;
+            img{
+                transform: scale(1.01);
+                box-shadow: 0 5px 5px 1px #CF8516;
+            }
+        }
+        .productsCatalogNav {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            top:110px;
+        }      
+
+}
+
+//productsView
+.btn-porduct-add{
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+}
