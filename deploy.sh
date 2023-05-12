@@ -20,14 +20,14 @@ echo > .nojekyll
 git init
 
 # 第一次執行須執行下面地，第二次就不用了
-# git remote add origin https://github.com/BarretHexschool/VueTraining_w7.git
+# git remote add origin https://github.com/Barret0720/FreshHanber.git
 git checkout -B main
 git add -A
 git commit -m "deploy$commidWord"
 
-# if you are deploying to https://BarretHexschool.github.io
+# if you are deploying to https://Barret0720.github.io
  git push -f origin main   
-# git push -f git@github.com:BarretHexschool/VueTraining_w7.github.io.git main
+# git push -f git@github.com:Barret0720/FreshHanber.github.io.git main
 
 # navigate into the build output directory
 cd dist
@@ -36,6 +36,6 @@ git init
 git checkout -B main
 git add -A
 git commit -m "deploy$commidWord"
-# if you are deploying to https://BarretHexschool.github.io/vuetraining_w7
-git push -f git@github.com:BarretHexschool/VueTraining_w7.git main:gh-pages
+# if you are deploying to https://Barret0720.github.io/FreshHanber
+git push -f git@github.com:Barret0720/FreshHanber.git main:gh-pages
 cd -
